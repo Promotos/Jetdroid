@@ -33,7 +33,7 @@ public class Explode : MonoBehaviour {
         }
     }
 
-    void OnExplode()
+    public void OnExplode()
     {
         var t = transform;
         for (int  i=0; i<totalDebris; i++)

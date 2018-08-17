@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jetdroid/Scenes/GameStaging.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Jetdroid/Scenes/LevelStaging.unity
+    guid: 004ff6d1fc6a01844a2cae858d39227a
   m_configObjects: {}

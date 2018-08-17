@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Collectable : MonoBehaviour {
+
+    public AirMeter airMeter;
+    public Text winText;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +23,15 @@ public class Collectable : MonoBehaviour {
         if (target.gameObject.tag == "Player")
         {
             Destroy(gameObject);
+
+            foreach(GameObject enemy in GameObject.FindGameObjectsWithTag("Deadly"))
+            {
+                Destroy(enemy);
+            }
+
+            airMeter.isActive = false;
+
+            winText.text = "You Win!";
         }
     }
 }
